@@ -1,0 +1,63 @@
+*{
+    margin: 0%;
+    padding: 0%; 
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
+body::after{
+    content: "";
+    background: center url(../imagenes/planetas.jpg);
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+h1{
+    color: #f0f8ff;
+    font-family: 'Handlee', cursive;
+   padding: 5%;
+}
+
+h2{
+font-family: 'Bad Script', cursive;
+color: #dabc16;
+margin: 2%;
+
+}
+
+h3 {
+  color: rgb(112, 15, 67); 
+  font-family:'Satisfy', cursive;
+  font-size: 22px;
+
+}
+.poema {
+    font-size: 22px;
+    font-family:'Bad Script', cursive;
+    font-weight: 600;
+    color: rgb(243, 243, 245);
+}
+
+
+body {
+    text-align: center;
+}
+ /*
+@media screen and (max-width: 640px){
+    h1 {
+        padding: 20px;
+    }
+}
+*/
+
