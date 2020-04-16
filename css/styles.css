@@ -14,7 +14,10 @@ body {
 
 body::after{
     content: "";
-    background: center url(../imagenes/planetas.jpg);
+    background: url(../imagenes/planetas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     opacity: 0.9;
     top: 0;
     left: 0;
@@ -27,31 +30,128 @@ body::after{
 h1{
     color: #f0f8ff;
     font-family: 'Handlee', cursive;
-   padding: 5%;
+   padding: 4%;
 }
+
 
 h2{
 font-family: 'Bad Script', cursive;
 color: #dabc16;
-margin: 2%;
+margin: 1%;
 
 }
 
 h3 {
-  color: rgb(112, 15, 67); 
+  color: rgb(22, 228, 217); 
   font-family:'Satisfy', cursive;
-  font-size: 22px;
-
+  font-size: 25px;
+  font-weight:200;
 }
-.poema {
+
+.titulo-mundosInternos{
+    font-family: 'Handlee', cursive;
+    font-size: 30px;
+    color: #fdfffe;
+}
+
+p{
     font-size: 22px;
     font-family:'Bad Script', cursive;
     font-weight: 600;
     color: rgb(243, 243, 245);
+  
+}
+
+iframe{
+    margin-bottom: 5%;
+}
+
+.imagen-enlaces{
+    width: 250px;
+    height: 200px;
 }
 
 
- 
+/* image overlay*/
+
+figure{
+    position: relative;
+    width: 385px;
+    height: 220px;
+    overflow: hidden;
+}
+
+.imagen-enlaces{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+figcaption{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+figure:hover .imagen-enlaces{
+    opacity: 0.3;
+}
+
+figure:hover figcaption{
+    opacity: 1;
+}
+
+/*hasta aqui el codigo image de overlay*/
+
+
+.titulo-enlaces{
+    font-size: 22px;
+}
+
+.texto-enlaces{
+    font-size: 18px;  
+}
+
+/* Decoracion del enlace para que aparezca un boton*/
+.enlace{
+    background-color:rgba(255, 7, 131, 0.747);
+    padding: 1 em 1.5em;
+    box-shadow: 0 6px 0 rgba(83, 4, 37, 0.747);
+    color: #ffffff;
+    position: relative;
+    text-decoration: none;
+    font-family: 'Handlee';
+    text-transform: uppercase;
+}
+
+.enlace:hover {
+    background-color: #f73af7;
+    cursor: pointer;
+}
+
+.enlace:active {
+    box-shadow: none;
+    top: 5px;
+}
+
+/* Flexbox */
+.container-images{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    margin-top: 20px;
+
+}
+
+/*cuando la ventana se haga mas pequeña de 640 para abajo*/ 
 @media screen and (max-width: 640px){
     iframe{
     width: 90%;
@@ -64,4 +164,21 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     }
+
+    p{
+        margin: 0 15px;
+    }
+  
+}
+
+@media screen and (max-width: 850px){
+    .container-images{
+        flex-direction: column;
+    }
+
+    figure{
+        margin: 10px auto;
+
+    }
+
 }
