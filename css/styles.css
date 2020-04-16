@@ -189,4 +189,9 @@ figure{
     margin-left: auto;
     margin-right: auto;
     }
+
+    figcaption{
+        top: 33%;
+        width: 90%;
+    }
 }
