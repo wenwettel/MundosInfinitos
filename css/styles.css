@@ -169,11 +169,6 @@ figure:hover figcaption{
         margin: 0 15px;
     }
 
-    figure{
-        width: 65%;
-        margin-left: auto;
-        margin-right: auto;
-        }
     }
   
 
@@ -187,4 +182,11 @@ figure:hover figcaption{
 
     }
 
+}
+@media screen and (max-width: 500px){
+figure{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    }
 }
