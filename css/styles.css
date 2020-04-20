@@ -10,6 +10,7 @@ body {
     height: 100%;
     display: block;
     position: relative;
+    padding-top: 137px;
 }
 
 body::after{
@@ -33,6 +34,18 @@ h1{
    padding: 4%;
 }
 
+
+.encabezado{
+    position: fixed;
+    text-align: center;
+    padding: 0;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding-top:15px ;
+    background-image: linear-gradient(to bottom right, rgba(70, 6, 78,0.95)0%, rgba(11, 6, 78,0.95)25%,rgba(134, 25, 177,0.95)80%, rgba(207, 84, 245,0.95));
+    
+}
 
 h2{
 font-family: 'Bad Script', cursive;
