@@ -164,7 +164,19 @@ figure:hover figcaption{
 
 }
 
-/*cuando la ventana se haga mas pequeña de 640 para abajo*/ 
+/*cuando la ventana se haga mas pequeña de 640 para abajo*/
+
+@media screen and (max-width: 850px){
+    .container-images{
+        flex-direction: column;
+    }
+
+    figure{
+        margin: 10px auto;
+
+    }
+}
+
 @media screen and (max-width: 640px){
     iframe{
     width: 90%;
@@ -181,23 +193,17 @@ figure:hover figcaption{
     p{
         margin: 0 15px;
     }
-
-    }
-  
-
-@media screen and (max-width: 850px){
-    .container-images{
-        flex-direction: column;
-    }
-
-    figure{
-        margin: 10px auto;
-
-    }
-
 }
+  
+@media screen and (max-width: 722px){
+        body{
+        padding-top: 185px;
+        }
+    }
+
+    
 @media screen and (max-width: 500px){
-figure{
+    figure{
     width: 85%;
     margin-left: auto;
     margin-right: auto;
